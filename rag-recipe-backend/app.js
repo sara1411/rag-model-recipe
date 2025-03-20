@@ -117,6 +117,16 @@ app.post('/query', async (req, res) => {
     }
 });
 
+app.get('/', async (req, res) => {
+    try{
+        res.status(200).send('Welcome to food recipes World');
+    }
+    catch (error) {
+        console.error('Error querying:', error);
+        res.status(500).send('Error querying.');
+    }
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Server listening on port ${process.env.PORT}`);
 });
