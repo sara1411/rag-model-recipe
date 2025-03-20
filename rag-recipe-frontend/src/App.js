@@ -40,7 +40,7 @@ function App() {
     return (
         <div className="h-screen flex flex-col">
             <div className="fixed top-0 left-0 w-full bg-blue-500 text-white p-4 text-center shadow-md z-10">
-            <h1 className="text-2xl font-semibold">FoodWise</h1>
+            <h1 className="text-2xl font-semibold">FoodWise App</h1>
         </div>
             <div className="flex justify-center items-center flex-1">
                 <div className="w-full h-full flex flex-col shadow-lg rounded-lg overflow-hidden">
