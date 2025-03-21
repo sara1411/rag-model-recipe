@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const pdfParse = require('pdf-parse');
 const fs = require('fs');
 const Recipe = require('./models/Recipe');
-const { pipeline } = require('@xenova/transformers');
+const { pipeline } = require('@huggingface/transformers');
 const cors = require('cors');
 
 const app = express();
