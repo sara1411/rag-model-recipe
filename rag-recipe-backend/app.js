@@ -53,9 +53,9 @@ async function generateEmbeddings(text) {
   return Array.from(output.data);
 }
 
-app.post('/upload-pdf', async (req, res) => {
+/*app.post('/upload-pdf', async (req, res) => {
   try {
-    const pdfBuffer = fs.readFileSync('./files/Breakfast_Recipes.pdf'); // Replace with your pdf file path
+   // const pdfBuffer = fs.readFileSync('./files/Breakfast_Recipes.pdf'); // Replace with your pdf file path
     const data = await pdfParse(pdfBuffer);
     const text = data.text;
     const recipeChunks = chunk_generated_recipes(text);
@@ -71,7 +71,7 @@ app.post('/upload-pdf', async (req, res) => {
     console.error('Error processing PDF:', error);
     res.status(500).send('Error processing PDF.');
   }
-});
+});*/
 
 app.post('/query', async (req, res) => {
     try {
